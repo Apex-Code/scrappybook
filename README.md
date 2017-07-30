@@ -1,24 +1,38 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Scrappybook is a Rails App developed by Havick Development as part of the 14 in 14 challenge: Design 14 complete RESTful Ruby on Rails Applications in 14 days. It is an application that will allow users to scrapbook on the electric internet machine.
 
-Things you may want to cover:
+Users
 
-* Ruby version
+[] Users have many scrapbooks
 
-* System dependencies
+[] Have a username
 
-* Configuration
+[] Have a password
 
-* Database creation
+[] Can log in
 
-* Database initialization
+[] Can log out
 
-* How to run the test suite
+[] Can create scrapbooks
 
-* Services (job queues, cache servers, search engines, etc.)
+[] Can edit scrapbooks
 
-* Deployment instructions
+[] CANNOT manipulate other user's scrapbooks
 
-* ...
+[] Can only edit and adjust their own scrapbooks
+
+Scrapbooks
+
+[] Have pictures
+
+[] Belongs to User
+
+[] Can be adjusted
+
+[] Can be deleted
+
+[] can be upvoted
+*Revamped
+
+[] Upgrades to be performed after 14 in 14 challenge is complete, added after app finalization
