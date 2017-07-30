@@ -4,35 +4,36 @@ Scrappybook is a Rails App developed by Havick Development as part of the 14 in 
 
 Users
 
-[] Users have many scrapbooks
+[x] Users have many scrapbooks
 
-[] Have a username
+[x] Have an email
 
-[] Have a password
+[x] Have a password
 
-[] Can log in
+[x] Can log in
 
-[] Can log out
+[x] Can log out
 
-[] Can create scrapbooks
+[x] Can create scrapbooks
 
-[] Can edit scrapbooks
+[x] Can edit scrapbooks
 
-[] CANNOT manipulate other user's scrapbooks
+[x] CANNOT manipulate other user's scrapbooks
 
-[] Can only edit and adjust their own scrapbooks
+[x] Can only edit and adjust their own scrapbooks
 
 Scrapbooks
 
-[] Have pictures
+[x] Have pictures
 
-[] Belongs to User
+[x] Belongs to User
 
-[] Can be adjusted
+[x] Can be adjusted
 
-[] Can be deleted
+[x] Can be deleted
 
-[] can be upvoted
 *Revamped
 
 [] Upgrades to be performed after 14 in 14 challenge is complete, added after app finalization
+
+[] can be upvoted
