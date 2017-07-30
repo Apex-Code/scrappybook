@@ -12,6 +12,12 @@ class ScrapsController < ApplicationController
 
   def create
     @scrap = Scrap.new(scrap_params)
+    
+    if @scrap.save 
+      redirect_to @scrap, notice: "Sucessfully added this Scrap!"
+    else
+      render 'new'
+    end
   end
 
   def edit
