@@ -1,8 +1,8 @@
 
 - - @scraps.each do |scrap|
 		.box.panel.panel-default
-			= link_to (image_tag scrap.image.url), scrap
-			%h2= link_to scrap.title, scrap
-			%p.user
-				Submitted by
-				= scrap.user.email
+		= link_to (image_tag scrap.image.url), scrap
+		%h2= link_to scrap.title, scrap
+		%p.user
+		Submitted by
+		= scrap.user.email
