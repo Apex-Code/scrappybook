@@ -4,6 +4,7 @@ class ScrapsController < ApplicationController
 
 
   def index
+    @scraps = Scrap.all.order("created_at DESC")
   end
 
   def new
