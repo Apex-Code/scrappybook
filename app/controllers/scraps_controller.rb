@@ -1,5 +1,8 @@
 class ScrapsController < ApplicationController
 
+  before_action :find_scrap, except: [:new, :create]
+
+
   def index
   end
 
@@ -33,5 +36,5 @@ private
   def find_scrap
     @scrap = Scrap.find(params[:id])
   end
-  
+
 end
