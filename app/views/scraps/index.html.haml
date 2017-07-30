@@ -1,7 +1,7 @@
 
 - @scraps.each do |scrap|
 		.box.panel.panel-default
-		= link_to (image_tag scrap.image), scrap
+		=link_to (image_tag image_tag @scrap.scrap_image.url(:scrap_show))
 		%h2= link_to scrap.title, scrap
 		%p.user
 		Submitted by

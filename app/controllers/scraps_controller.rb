@@ -43,7 +43,7 @@ class ScrapsController < ApplicationController
 private
   
   def scrap_params
-    params.require(:scrap).permit(:title, :description)
+    params.require(:scrap).permit(:title, :description, :image)
   end
 
   def find_scrap

@@ -1,6 +1,21 @@
-%h1= @scrap.title
-%p= @scrap.description
-
-=link_to "Home", root_path 
-=link_to "Edit", edit_scrap_path(@scrap)
-=link_to "Delete", scrap_path, method: :delete, data: {confirm: "You can't fix this. Are you sure you want to delete this Scrap?"} 
+#pin_show.row
+	.col-md-8.col-md-offset-2
+		.panel.panel-default
+			.panel-heading.pin_image
+				= image_tag @scrap.image.url(:scrap_show), class: "scrap-show"
+			.panel-body
+				%h1= @scrap.title
+				%p.description= @scrap.description
+			.panel-footer
+				.row
+					.col-md-6
+						%p.user
+							Submitted by
+							= @scrap.user.email
+					.col-md-6
+						.btn-group.pull-right
+							
+								
+							- if user_signed_in?
+								= link_to "Edit", edit_scrap_path, class: "btn btn-default"
+								= link_to "Delete", scrap_path, method: :delete, data: { confirm: "You can't come back from this.  Are you sure?" }, class: "btn btn-default"
