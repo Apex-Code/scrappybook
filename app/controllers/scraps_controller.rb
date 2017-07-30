@@ -8,11 +8,11 @@ class ScrapsController < ApplicationController
   end
 
   def new
-    @scrap = Scrap.new
+    @scrap = current_user.scraps.build
   end
 
   def create
-    @scrap = Scrap.new(scrap_params)
+    @scrap = current_user.scraps.build(scrap_params)
     
     if @scrap.save 
       redirect_to @scrap, notice: "Sucessfully added new Scrap!"
