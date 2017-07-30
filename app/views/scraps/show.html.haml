@@ -3,3 +3,4 @@
 
 %p=link_to "Home", root_path 
 %p=link_to "Edit", edit_scrap_path(@scrap)
+%p=link_to "Delete", scrap_path, method: :delete, data: {confirm: "You can't fix this. Are you sure you want to delete this Scrap?"} 

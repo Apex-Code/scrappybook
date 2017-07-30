@@ -37,6 +37,7 @@ class ScrapsController < ApplicationController
 
   def destroy
     @scrap.destroy
+    redirect_to root_path
   end
 
 private
