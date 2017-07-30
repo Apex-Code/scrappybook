@@ -15,7 +15,7 @@ class ScrapsController < ApplicationController
     @scrap = Scrap.new(scrap_params)
     
     if @scrap.save 
-      redirect_to @scrap, notice: "Sucessfully added this Scrap!"
+      redirect_to @scrap, notice: "Sucessfully added new Scrap!"
     else
       render 'new'
     end
@@ -25,6 +25,11 @@ class ScrapsController < ApplicationController
   end
 
   def update
+    if @scrap.update(scrap_params)
+      redirect_to @scrap, notice: "Sucessfully updated Scrap!"
+    else
+      render 'edit'
+    end
   end
 
   def show
