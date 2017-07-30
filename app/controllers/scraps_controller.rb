@@ -1,6 +1,6 @@
 class ScrapsController < ApplicationController
 
-  before_action :find_scrap, except: [:new, :create]
+  before_action :find_scrap, except: [:new, :create, :index]
 
 
   def index
